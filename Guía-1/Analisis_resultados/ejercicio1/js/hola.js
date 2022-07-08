@@ -1,0 +1,1 @@
+var texto = document.write("<h1>Holaaaaaaaaaaaaaaaaaaaa</h1>");
