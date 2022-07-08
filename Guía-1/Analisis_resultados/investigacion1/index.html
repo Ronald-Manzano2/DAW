@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript no intrusivo</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div>
+        <h1>JavaScript no intrusivo</h1>
+        <p>El concepto es muy sencillo, consiste en separar la funcionalidad cliente de una página del contenido HTML. Así pues, el Javascript no intrusivo, es aquel que está totalmente separado de la estructura. Para ello el código Javascript en vez de estar mezclado con el código HTML, debe estar en un fichero .js aparte. Para los que no la conozcan, es un framework para javascript que nos permite enfocar de una manera diferente la manera de desarrollar el comportamiento de una web, además de simplificarnos el desarrollo de la parte de cliente de las aplicaciones web.</p>
+    </div>
+
+    <div>
+        <h2>Ejemplo</h2>
+        <h3>Boton con javascript intrusivo</h3>
+        <input type="button" value="Prueba" id="prueba" onclick="alerta()">
+        <script>
+            function alerta(){
+                alert("Hola Mundo");
+            }
+        </script>
+
+        <h3>Boton con javascript no intrusivo</h3>
+        <input type="button" value="Prueba" id="prueba2">
+        <script src="js/alerta.js"></script>
+    </div>
+</body>
+</html>
